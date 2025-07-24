@@ -2,7 +2,13 @@
 
 ![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 
+
+## 🔗 Live Demo  
+[Eccomerce-project](https://responsive-eccomerce-projects.netlify.app/)
+
+
 ## Welcome! 👋
+
 
 Thanks for checking out this front-end coding challenge.
 
