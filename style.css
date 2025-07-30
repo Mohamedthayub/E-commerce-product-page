@@ -113,3 +113,52 @@ h3{
     height: 12px;
     margin-top: 25px;
 }
+
+@media screen and (min-width:400px){
+    nav{
+        display: flex;
+    }
+    .logo{
+        height: 25px;
+        margin-top: 10px;
+    }
+    .nav-items{
+        display: block;
+        display: flex;
+        margin-left: 10px;
+    }  
+    p{
+        margin-left: 10px;
+    }
+    .humberger-icon{
+        display: none;
+    }
+    .small-image-container{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    main{
+        display: flex;
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    .show-image{
+        width: 380px;
+        height: 380px;
+    }
+    .small-image{
+        height: 80px;
+        width: 80px;
+        border-radius: 8px;
+    }
+    .small-image:hover{
+        border:  2px solid orange;
+        
+    }
+    .text-container{
+        margin-left: 100px;
+    }
+    
+}
