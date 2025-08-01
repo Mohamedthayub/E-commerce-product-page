@@ -103,6 +103,9 @@ h3{
     margin-top: 20px;
     margin-right: 10px;
 }
+.cart:hover{
+    cursor: pointer;
+}
 .plus{
     width: 10px;
     height: 5px;
@@ -115,20 +118,38 @@ h3{
 }
 
 @media screen and (min-width:400px){
+    header{
+        margin:30px;
+    }
     nav{
         display: flex;
     }
     .logo{
         height: 25px;
-        margin-top: 10px;
+        margin-top:15px;
+    }
+    .profile-image-container{
+        margin-top: 15px;
     }
     .nav-items{
         display: block;
         display: flex;
-        margin-left: 10px;
+        margin-left: 50px;
     }  
+    .nav-item{
+        margin-left: 25px;
+    }
+    .profile-logo{
+        height: 40px;
+        width: 40px;
+    }
     p{
         margin-left: 10px;
+        font-size: 20px;
+         
+        &:hover{
+            cursor: pointer;
+        }
     }
     .humberger-icon{
         display: none;
@@ -139,18 +160,31 @@ h3{
         justify-content: space-between;
         margin-top: 10px;
     }
+    h1{
+        font-size: 40px;
+        width:400px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
     main{
         display: flex;
-        margin-left: 300px;
-        margin-top: 50px;
+        margin-left: 350px;
+        margin-top: 100px;
+    }
+    h2,h3{
+        margin: 0px;
+    }
+    .company-name{
+        color: hsl(219, 9%, 45%);
+        margin-left: 10px;
     }
     .show-image{
-        width: 380px;
-        height: 380px;
+        width: 450px;
+        height: 450px;
     }
     .small-image{
-        height: 80px;
-        width: 80px;
+        height: 100px;
+        width: 100px;
         border-radius: 8px;
     }
     .small-image:hover{
@@ -160,5 +194,35 @@ h3{
     .text-container{
         margin-left: 100px;
     }
+    .about-product{
+        width: 500px;
+        margin-bottom: 0px;
+
+    }
+    .price-container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .first-price-container{
+        margin-bottom: 0px;
+    }
+    .discount-percentage{
+        margin-top: 4px;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin-top: 10px;
+    }
     
+    .buttons{
+        width: 200px;
+        height: 60px;
+    }
+    .add-to-cart-btn{
+        height: 60px;
+        margin-left: 10px;
+    }
 }
