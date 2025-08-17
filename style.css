@@ -106,12 +106,12 @@ h3{
 .cart:hover{
     cursor: pointer;
 }
-.plus{
+.minus{
     width: 10px;
     height: 5px;
     margin-top: 28px;
 }
-.minus{
+.plus{
     width: 12px;
     height: 12px;
     margin-top: 25px;
