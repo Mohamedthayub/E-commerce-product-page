@@ -8,7 +8,7 @@ const addtoCartButton = document.querySelector(".add-to-cart-btn");
 const cardLogo = document.querySelector(".cart-logo");
 
 let cartCount = 0;
-let price 
+let price  = 125; 
 
 allImage.forEach((img) =>{
     img.addEventListener("click", () => {
@@ -34,3 +34,11 @@ decreaseCount.addEventListener("click",() => {
     showCount.innerText = cartCount;
 })
 
+
+function sumof(cartCount,price){
+    console.log(cartCount * price);
+}
+
+addtoCartButton.addEventListener("click",() => {
+    sumof(cartCount,price);
+})
