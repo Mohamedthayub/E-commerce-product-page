@@ -3,13 +3,22 @@ const allImage  = document.querySelectorAll(".small-image");
 const increaseCount = document.querySelector(".plus");
 const decreaseCount = document.querySelector(".minus");
 const showCount = document.getElementById("show-count");
+const cardContainer = document.querySelector(".card-container");
+const addtoCartButton = document.querySelector(".add-to-cart-btn");
+const cardLogo = document.querySelector(".cart-logo");
+
+let cartCount = 0;
+let price 
+
 allImage.forEach((img) =>{
     img.addEventListener("click", () => {
         showImage.src = img.src;
     })
 })
 
-let cartCount = 0;
+cardLogo.addEventListener("click",() => {
+    cardContainer.classList.toggle("show");
+})
 
 increaseCount.addEventListener("click",() => {
     cartCount++;
@@ -24,3 +33,4 @@ decreaseCount.addEventListener("click",() => {
     }
     showCount.innerText = cartCount;
 })
+

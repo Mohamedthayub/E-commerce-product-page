@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
 body{
-    font-family: "Kumbh Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 
@@ -84,6 +84,7 @@ h3{
     justify-content: center;
     width: 360px;
     border-radius: 10px;
+    border: none;
 }
 
 .buttons{
@@ -120,6 +121,34 @@ h3{
 @media screen and (min-width:400px){
     header{
         margin:30px;
+    }
+    main{
+        position: absolute;
+        top: 150px;
+    }
+    .card-container{
+        display: flex;
+        justify-content:flex-end;
+    }
+    .card{
+        background-color: rgb(245, 237, 237);
+        width: 350px;
+        height: 200px;
+        margin-right: 180px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .empty-card{
+        padding-bottom: 10px;
+        border-bottom: 1px solid hsl(219, 9%, 45%);
+    }
+    .empty-card-status{
+       color: hsl(219, 9%, 45%);
+       text-align: center;
+       padding-top: 30px;
+    }
+    .show{
+        display:none;
     }
     nav{
         display: flex;
@@ -189,7 +218,6 @@ h3{
     }
     .small-image:hover{
         border:  2px solid orange;
-        
     }
     .text-container{
         margin-left: 100px;
@@ -197,7 +225,6 @@ h3{
     .about-product{
         width: 500px;
         margin-bottom: 0px;
-
     }
     .price-container{
         display: flex;
@@ -217,6 +244,10 @@ h3{
         margin-top: 10px;
     }
     
+    h4{
+        margin-top: 22px;
+        font-size: 16px;
+    }
     .buttons{
         width: 200px;
         height: 60px;
@@ -224,5 +255,8 @@ h3{
     .add-to-cart-btn{
         height: 60px;
         margin-left: 10px;
+    }
+    img:hover{
+        cursor: pointer;
     }
 }
